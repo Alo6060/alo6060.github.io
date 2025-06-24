@@ -26,18 +26,18 @@ position: fixed;
 }
 
     nav {
-      width: 240px;
+      width: 230px;
       background-color: #161b22;
       color: #c9d1d9;
       padding: 1rem;
       position: absolute;
       top: 0;
       left: 0;
-      height: 100vh;
-      transform: translateX(-100%);
-      transition: transform 0.3s ease;
+      height: 30vh;
+      transform: translateY(-100%);
+      transition: transform 0.3s ease-in;
       z-index: 1000;
-      border-right: 1px solid #30363d;
+      border-right: 1px solid #1d1f2e;
     }
     nav.open {
       transform: translateX(0);
@@ -142,61 +142,46 @@ position: fixed;
     </ul>
   </nav>
   <header>
-    <h1>El Viaje del Internet</h1>
+    <h1>Un largo viaje por el internet</h1>
   </header>
   <main>
     <section>
       <div class="img-placeholder">
-        <img src="origen.jpg" alt="Imagen del origen del Internet">
+        <img src="img/internet.png" alt="Imagen del origen del Internet">
       </div>
-      <h2>¿Cómo empezó todo?</h2>
+      <h2> Antecedentes históricos (ARPANET y sus orígenes militares)</h2>
       <p>
-        El Internet nació en un contexto militar. En 1958, el Departamento de Defensa de EE.UU. creó la <strong>ARPA</strong> para impulsar la tecnología. Entre sus miembros estaba <strong>J.C.R. Licklider</strong>, quien imaginó una red global que conectara computadoras para compartir información fácilmente.
+       El origen del Internet se remonta a finales de los años 60, cuando el Departamento de Defensa de Estados Unidos creó <strong>ARPANET</strong>, una red de computadoras diseñada para mantener la comunicación entre distintas bases militares y centros de investigación, incluso en caso de guerra. Esta red fue pionera en el uso del protocolo de conmutación de paquetes, base fundamental de lo que hoy conocemos como Internet
       </p>
 
-      <h3>1969: El primer paso real</h3>
+      <h3>Evolución del uso de militar y académico a civil y comercial</h3>
       <p>
-        Con la creación de <strong>ARPANET</strong>, se establecieron los primeros vínculos entre universidades. La clave: la conmutación de paquetes, que hacía la red más eficiente y resistente.
+        Durante los años 70 y 80, <strong> ARPANET </strong> fue adoptada por universidades e instituciones académicas para compartir información entre investigadores. A finales de los 80 e inicios de los 90, el acceso comenzó a abrirse al público y a empresas privadas, marcando el comienzo del uso comercial del Internet
       </p>
 
-      <h3>1972: Llega el correo electrónico</h3>
+      <h3> El nacimiento del World Wide Web</h3>
       <p>
-        ARPANET ya era funcional, y el correo electrónico se convirtió en la herramienta favorita. Por primera vez, personas separadas por miles de kilómetros podían comunicarse en segundos.
+        En 1989, el científico británico Tim Berners-Lee desarrolló la World Wide Web (WWW), un sistema que permitía navegar entre documentos a través de hipervínculos. Esta innovación introdujo los sitios web, el uso de navegadores y el lenguaje HTML, transformando el Internet en una herramienta accesible y visual para todo tipo de usuarios
       </p>
 
-      <h3>1983: Internet nace oficialmente</h3>
+      <h3>Etapas del Internet (Web 1.0, Web 2.0, Web 3.0)</h3>
       <p>
-        Se adopta el protocolo <strong>TCP/IP</strong>, creando una red verdaderamente universal: lo que hoy conocemos como Internet.
-      </p>
+<li>Web 1.0 (años 90): Los sitios eran estáticos, solo se podía leer información. No había interacción con los usuarios.</li>
+<li>Web 2.0 (2000 en adelante): Se introdujo la participación del usuario. Surgieron redes sociales, blogs, comentarios, y la web se volvió interactiva.</li>      
+<li>Web 3.0 (actualidad): Está enfocada en la descentralización, la inteligencia artificial, y la personalización del contenido. Aquí entran tecnologías como blockchain y el metaverso.</li>
+</p>
 
-      <h2>Los años 90s y 2000s: Todo cambia</h2>
-      <p>
-        Con la llegada de la <strong>World Wide Web</strong> en 1991, navegar por Internet se volvió accesible. Nacieron navegadores como <em>Mosaic</em> y <em>Netscape</em>, y pronto surgieron gigantes del comercio electrónico:
-      </p>
-      <ul>
-        <li>1994: <strong>Amazon</strong> revoluciona las compras en línea.</li>
-        <li>1995: <strong>eBay</strong> transforma las subastas digitales.</li>
-        <li>Chats, foros y correo electrónico se vuelven esenciales para la vida diaria.</li>
-      </ul>
+      <h2>Expansión global del acceso a Internet</h2>
+    <p>A partir de los años 2000, el acceso a Internet creció exponencialmente en todo el mundo. La instalación de cables submarinos, el desarrollo de redes móviles y la aparición de servicios inalámbricos permitió que millones de personas se conectaran, incluso en regiones alejadas</p>
 
-      <h2>La era moderna (2010s–2020s)</h2>
+      <h2> Impacto social y cultural</h2>
       <p>
-        Redes sociales como Facebook, Instagram o TikTok cambiaron la forma de comunicarnos. El acceso móvil mediante smartphones y redes 4G/5G hizo del Internet algo omnipresente.
+        El Internet ha cambiado radicalmente la forma en que nos comunicamos, trabajamos, aprendemos y consumimos contenido. Ha permitido el desarrollo del comercio digital, la educación en línea, el activismo social, y ha creado nuevas formas de cultura digital como los memes, los influencers o los videojuegos en línea
       </p>
-      <p>
-        Hoy, conceptos como <strong>Internet de las Cosas (IoT)</strong>, <strong>la nube</strong> e <strong>inteligencia artificial</strong> dominan el mundo digital.
-      </p>
-
-      <h2>Retos del presente</h2>
-      <ul>
-        <li><strong>Privacidad:</strong> nuestros datos están en juego.</li>
-        <li><strong>Ciberseguridad:</strong> crecen los ataques y fraudes.</li>
-        <li><strong>Desinformación:</strong> las noticias falsas se propagan rápidamente.</li>
-        <li><strong>Brecha digital:</strong> no todos tienen el mismo acceso al conocimiento.</li>
-      </ul>
+     
 
       <div class="highlight">
-        Lo que empezó como un experimento militar, hoy es el motor que conecta al mundo entero. Internet ya no es el futuro. Es el presente.
+       Lo que en su momento fue una iniciativa con fines militares, hoy se ha convertido en la base que mantiene al mundo interconectado. Internet dejó de ser una promesa del futuro; ahora forma parte esencial del presente.
       </div>
     </section>
   </main>
@@ -206,11 +191,11 @@ position: fixed;
     <button onclick="toggleSources()">Fuentes</button>
     <div id="fuentes" style="display: none; margin-top: 1rem;">
       <ol>
-        <li><a href="https://es.linkedin.com/pulse/componentes-esenciales-de-internet-rolando-manuel-mata-teran" target="_blank">LinkedIn – Componentes esenciales de Internet</a></li>
-        <li><a href="https://www3.gobiernodecanarias.org/medusa/contenidosdigitales/FormacionTIC/cdtic2014/03co/11_servicios_de_internet.html" target="_blank">Gobierno de Canarias – Servicios de Internet</a></li>
-        <li><a href="https://cmapspublic2.ihmc.us/rid=1239136955718_1163871558_10281/historia%20internet.pdf" target="_blank">IHMC – Historia de Internet</a></li>
-        <li><a href="https://blog.orange.es/consejos-y-trucos/servicios-de-internet/" target="_blank">Blog Orange – Servicios de Internet</a></li>
-        <li><a href="https://www.godaddy.com/resources/latam/seguridad/que-es-seguridad-en-la-web-manual-basico" target="_blank">GoDaddy – Seguridad en la Web</a></li>
+        <li><a href="https://es.wikipedia.org/wiki/Historia_de_Internet" target="_blank">Historia del internet</a></li>
+        <li><a href="https://fundaciontelefonica.com/educaciondigital/iot/" target="_blank">Fundacion telefonica ioT</a></li>
+        <li><a href="https://cmapspublic2.ihmc.us/rid=1239136955718_1163871558_10281/historia%20internet.pdf" target="_blank">Historia de Internet</a></li>
+        <li><a href="https://blog.orange.es/consejos-y-trucos/servicios-de-internet/" target="_blank">Servicios de Internet</a></li>
+        <li><a href="https://latam.kaspersky.com/resource-center/definitions/what-is-internet-security" target="_blank">Seguridad de internet</a></li>
       </ol>
     </div>
   </footer>

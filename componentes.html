@@ -29,16 +29,16 @@
     }
   
     nav {
-        width: 250px;
+        width: 230px;
       background-color: #161b22;
       color: white;
       padding: 1rem;
       position: absolute;
       top: 0;
       left: 0;
-      height: 100vh;
-      transform: translateX(-100%);
-      transition: transform 0.3s ease;
+      height: 30vh;
+      transform: translateY(-100%);
+      transition: transform 0.3s ease-in;
       z-index: 1000;
       border-right: 1px solid #30363d;
     }
@@ -68,8 +68,6 @@
       text-decoration: none;
       font-weight: bold;
       display: block;
-      padding: 0.5rem;
-      border-radius: 6px;
       transition: background-color 0.2s;
     }
   
@@ -187,7 +185,7 @@
      ☰
   </div>
   <nav>
-    <ul><br><br>
+    <ul>
      <li><a href="index.html">Origen y evolución</a></li>
       <li><a href="tecnologias.html">Nuevas tecnologías</a></li>
       <li><a href="servicios.html">Servicios del Internet</a></li>
@@ -197,31 +195,25 @@
   </nav>
   <div class="content">
     <header>
-      <h1>Componentes</h1>
+      <h1>Componentes que Conforman el internet</h1>
     </header>
     <main>
-      <section><h2>¿Qué es Internet?</h2>
-        <div class="img-placeholder"><img src="servi.jpg" alt=""></div>
-      <p>Internet es una red global que conecta computadoras y dispositivos mediante enlaces físicos, inalámbricos, protocolos y centros de datos distribuidos.</p>
-      <ul>
-        <li>Computadoras portátiles y de escritorio</li>
-        <li>Teléfonos inteligentes y tabletas</li>
-        <li>Televisores, consolas y dispositivos del hogar inteligente</li>
-        <li>Dispositivos portables como relojes, gafas y autos conectados</li>
-      </ul>
+      <section>
+        <div class="img-placeholder"><img src="img/componentes.webp" alt=""></div>
+      <p>El Internet es una red global que funciona gracias a la interacción de múltiples componentes, tanto físicos como lógicos. Estos elementos trabajan juntos para que podamos acceder a sitios web, enviar mensajes, ver videos en línea o simplemente navegar desde nuestros dispositivos. A continuación, te explicamos los principales componentes que hacen posible el funcionamiento de Internet</p>
+     
       </section>
 
       <section class="row">
         <div class="col-text">
-          <h2>Enlaces y Conmutación de Paquetes</h2>
-        <p>Los datos se dividen en paquetes y toman rutas distintas hasta su destino, utilizando enlaces como:</p>
+          <h2> Proveedores de servicios de Internet (ISP)</h2>
+        <p>El Internet no funcionaría sin un conjunto de reglas llamadas protocolos, que permiten que los dispositivos se entiendan entre sí</p>
         <ul>
-          <li>Cable coaxial</li>
-          <li>Cable de cobre</li>
-          <li>Fibra óptica</li>
-          <li>Radio (WiFi, 4G, 5G)</li>
+          <li>TCP/IP (Transmission Control Protocol / Internet Protocol): es la base de la comunicación en Internet, permite que los datos se dividan en paquetes y lleguen a su destino correctamente</li>
+          <li>HTTP/HTTPS: protocolos que permiten acceder a páginas web. La versión segura (HTTPS) protege los datos mediante cifrado</li>
+          <li>DNS (Domain Name System)</li>
+          <li>FTP (File Transfer Protocol): se usa para transferir archivos entre computadoras y servidores.</li>
         </ul>
-        <p>Los routers y switches se encargan de su reenvío.</p>
         </div>
         <div class="col-img">
           <img src="World-Wide-Web.jpg" alt="">
@@ -233,28 +225,29 @@
           <img src="correo.jpg" alt="">
         </div>
         <div class="col-text">
-          <h2>Protocolos de Internet</h2>
-        <p>Son reglas que rigen la comunicación entre dispositivos:</p>
+          <h2>Equipos del usuario final</h2>
+        <p>Los dispositivos que utilizamos para acceder a Internet también son componentes esenciales. Estos incluyen</p>
         <ul>
-          <li>IP: asigna direcciones únicas</li>
-          <li>TCP: garantiza entrega y orden</li>
+          <li>Computadoras, laptops, tablets y smartphones</li>
+          <li>Routers y módems, que gestionan la conexión entre el proveedor de Internet y nuestros dispositivos</li>
+          <li>Antenas Wi-Fi y tarjetas de red, que permiten la conectividad inalámbrica</li>
         </ul>
-        <p>Forman el conjunto TCP/IP, base de la comunicación en Internet.</p>
+        <p>Estos equipos actúan como puertas de entrada al mundo digital</p>
         </div>
       </section>
 
        <section class="row">
         <div class="col-text">
-        <h2>Estándares y RFC</h2>
-        <p>El IETF documenta los protocolos en los RFC. Ejemplos:</p>
+        <h2> Software y aplicaciones</h2>
+        <p>El software también es clave para interactuar con el Internet. Algunos ejemplos importantes son</p>
         <ul>
-          <li>HTTP: navegación web</li>
-          <li>SMTP: correo electrónico</li>
-          <li>DNS: nombres de dominio</li>
+          <li>Navegadores web (como Chrome, Firefox, Safari), que nos permiten acceder a páginas web</li>
+          <li>Clientes de correo electrónico, servicios de mensajería y videollamadas</li>
+          <li>Sistemas operativos que permiten que los dispositivos usen redes (como Windows, Android, iOS, Linux)</li>
         </ul>
             </div>
         <div class="col-img">
-          <img src="Google-Drive.jpg" alt="Descripción de imagen">
+          <img src="img/sofware y aplicaiones.webp" alt="Descripción de imagen">
         </div>
       </section>
 </body>

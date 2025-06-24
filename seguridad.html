@@ -28,25 +28,26 @@
       cursor: pointer;
     }
   
+   
     nav {
-        width: 250px;
+      width: 230px;
       background-color: #161b22;
-      color: white;
+      color: #c9d1d9;
       padding: 1rem;
       position: absolute;
       top: 0;
       left: 0;
-      height: 100vh;
-      transform: translateX(-100%);
-      transition: transform 0.3s ease;
+      height: 30vh;
+      transform: translateY(-100%);
+      transition: transform 0.3s ease-in;
       z-index: 1000;
-      border-right: 1px solid #30363d;
+      border-right: 1px solid #1d1f2e;
+      
     }
-  
     nav.open {
       transform: translateX(0);
-    }
   
+    }
     nav h2 {
       font-size: 1.3rem;
       margin-bottom: 1.5rem;
@@ -68,8 +69,6 @@
       text-decoration: none;
       font-weight: bold;
       display: block;
-      padding: 0.5rem;
-      border-radius: 6px;
       transition: background-color 0.2s;
     }
   
@@ -187,7 +186,7 @@
      ☰
   </div>
   <nav>
-    <ul><br><br>
+    <ul>
       <li><a href="index.html">Origen y evolución</a></li>
       <li><a href="tecnologias.html">Nuevas tecnologías</a></li>
       <li><a href="servicios.html">Servicios del Internet</a></li>
@@ -200,61 +199,60 @@
       <h1>Seguridad en el internet</h1>
     </header>
     <main>
-      <section> <h2>¿Qué es la Seguridad Digital?</h2>
-        <div class="img-placeholder"><img src="servi.jpg" alt=""></div>
-        <p>
-          La seguridad en la red hace alusión al conjunto de medidas y prácticas destinadas a proteger los datos personales y la información sensible en el entorno digital.
-        </p>
-        <p>
-          Esto incluye el uso de contraseñas complejas, autenticación multifactor, antivirus, firewalls y otras soluciones que permiten una navegación segura en Internet.
-        </p>
+      <section> <h2>¿Qué es?</h2>
+        <div class="img-placeholder"><img src="img/Seguriodad de internet.webp" alt=""></div>
+        <p>  
+        La seguridad en Internet es fundamental para proteger la información personal, la privacidad y la integridad de los sistemas conectados a la red. A medida que crecen los servicios digitales, también aumentan los riesgos, como virus, fraudes o robos de identidad. Por eso, es esencial conocer los principales aspectos de la ciberseguridad y aprender a navegar de forma segura.
+    </p>
       </section>
 
       <section class="row">
         <div class="col-text">
-       <h2>La Importancia de Navegar de Forma Segura</h2>
-          <p>Navegar por Internet sin tomar precauciones puede tener graves consecuencias. Entre los riesgos más comunes encontramos:</p>
+       <h2>Amenazas comunes en Internet</h2>
+          <p>Existen múltiples peligros a los que los usuarios están expuestos si no navegan con precaución</p>
           <ul>
-            <li>Robo de identidad.</li>
-            <li>Fraudes financieros.</li>
-            <li>Exposición y pérdida de información confidencial.</li>
-            <li>Instalación de malware o software malicioso.</li>
+            <li>Virus y malware: son programas maliciosos que dañan o controlan tu dispositivo sin permiso</li>
+            <li>Phishing: técnica que engaña al usuario para que revele información confidencial (como contraseñas o datos bancarios) a través de correos o páginas falsas</li>
+            <li>Robo de identidad: ocurre cuando alguien se hace pasar por otra persona para obtener beneficios ilegales o realizar fraudes</li>
           </ul>
-        <p>Los routers y switches se encargan de su reenvío.</p>
+        <p>Estas amenazas suelen aprovechar la desinformación o el descuido del usuario</p>
         </div>
         <div class="col-img">
-          <img src="World-Wide-Web.jpg" alt="">
+          <img src="img/consejos-amenazas-internet.webp" alt="">
         </div>
       </section>
 
       <section class="row">
         <div class="col-img">
-          <img src="correo.jpg" alt="">
+          <img src="img/proteccion de datos personales.webp" alt="">
         </div>
         <div class="col-text">
-           <h2>Principales Amenazas y Riesgos en Internet</h2>
+           <h2>Protección de datos personales</h2>
+           <p>La privacidad en línea es un derecho y una responsabilidad. Proteger nuestros datos significa</p>
           <ul>
-            <li><strong>Phishing:</strong> correos o sitios falsos que buscan obtener información personal.</li>
-            <li><strong>Malware:</strong> software malicioso que daña o controla tu equipo.</li>
-            <li><strong>Ransomware:</strong> bloquea tus datos hasta que pagues un "rescate".</li>
-            <li><strong>WiFi públicas:</strong> conexiones no seguras fácilmente interceptables.</li>
-            <li><strong>Redes sociales:</strong> compartir datos puede facilitar la suplantación de identidad.</li>
+            <li>No compartir información sensible en redes sociales o sitios no confiables</li>
+            <li>Configurar adecuadamente la privacidad de nuestras cuentas</li>
+            <li>Usar contraseñas fuertes y no reutilizarlas en distintos sitios</li>
+            <li>Evitar conectarse a redes Wi-Fi públicas sin protección</li>
+            <p>El mal uso de datos personales puede llevar a pérdidas económicas o reputacionales</p>
           </ul>
         </div>
       </section>
 
        <section class="row">
         <div class="col-text">
-                <h2>Medidas de Seguridad y Beneficios</h2>
+                <h2>Ciberseguridad en redes</h2>
+                <p>Las redes domésticas y empresariales también necesitan protección Algunas medidas incluyen</p>
           <ul>
-            <li>Crear contraseñas seguras con letras, números y símbolos.</li>
-            <li>Mantener tus dispositivos y aplicaciones actualizados.</li>
-            <li>Instalar software de protección como antivirus y firewalls.</li>
-            <li>Evitar redes públicas sin protección.</li>
+            <li>Instalar cortafuegos (firewalls) para controlar el tráfico que entra y sale de la red</li>
+            <li>Usar antivirus y antispyware actualizados</li>
+            <li>Cambiar las contraseñas predeterminadas de routers y dispositivos conectados</li>
+            <li>Implementar redes privadas virtuales (VPN) para cifrar la conexión, especialmente en lugares públicos</li>
           </ul>
+
             </div>
         <div class="col-img">
-          <img src="Google-Drive.jpg" alt="Descripción de imagen">
+          <img src="img/ciberseguridad en redes.webp" alt="Descripción de imagen">
         </div>
       </section>
 </body>
