@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguridad en el Internet</title>
+  <link rel="stylesheet" href="modulos.css">
+</head>
+<body>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <div class="menu-circles">
+    <a href="Seguridad.html" class="circle-link circle1">Seguridad</a>
+    <a href="componentes.html" class="circle-link circle2">Componentes</a>
+    <a href="servicios.html" class="circle-link circle3">Servicios</a>
+    <a href="tecnologias.html" class="circle-link circle4">Tecnologías</a>
+    <a href="index.html" class="circle-link circle5">Inicio</a>
+  </div>
+    <header><h1>Seguridad en Internet</h1></header>
+  <div class="contenido">
+    <div class="linea-conexion"></div>
+
+    <div class="modulo" onclick="toggleModulo(this)">
+      <img src="img/Seguriodad de internet.webp" alt="">
+      <div>
+        <h3>¿Qué es?</h3>
+        <div class="info-extra">
+            <p>  
+        La seguridad en Internet es fundamental para proteger la información personal, la privacidad y la integridad de los sistemas conectados a la red. A medida que crecen los servicios digitales, también aumentan los riesgos, como virus, fraudes o robos de identidad. Por eso, es esencial conocer los principales aspectos de la ciberseguridad y aprender a navegar de forma segura.
+    </p> </div>
+      </div>
+    </div>
+
+    <div class="modulo" onclick="toggleModulo(this)">
+      <img src="img/consejos-amenazas-internet.webp" alt="">
+      <div>
+        <h3>Amenazas comunes</h3>
+        <div class="info-extra">
+           <p>Existen múltiples peligros a los que los usuarios están expuestos si no navegan con precaución</p>
+          <ul>
+            <li>Virus y malware: son programas maliciosos que dañan o controlan tu dispositivo sin permiso</li>
+            <li>Phishing: técnica que engaña al usuario para que revele información confidencial (como contraseñas o datos bancarios) a través de correos o páginas falsas</li>
+            <li>Robo de identidad: ocurre cuando alguien se hace pasar por otra persona para obtener beneficios ilegales o realizar fraudes</li>
+          </ul>
+        <p>Estas amenazas suelen aprovechar la desinformación o el descuido del usuario</p>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="modulo" onclick="toggleModulo(this)">
+      <img src="img/proteccion de datos personales.webp" alt="">
+      <div>
+        <h3>Protección de datos</h3>
+        <div class="info-extra">
+          <p>La privacidad en línea es un derecho y una responsabilidad. Proteger nuestros datos significa</p>
+          <ul>
+            <li>No compartir información sensible en redes sociales o sitios no confiables</li>
+            <li>Configurar adecuadamente la privacidad de nuestras cuentas</li>
+            <li>Usar contraseñas fuertes y no reutilizarlas en distintos sitios</li>
+            <li>Evitar conectarse a redes Wi-Fi públicas sin protección</li>
+            <p>El mal uso de datos personales puede llevar a pérdidas económicas o reputacionales</p>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="modulo" onclick="toggleModulo(this)">
+      <img src="img/ciberseguridad en redes.webp" alt="">
+      <div>
+        <h3>Ciberseguridad en redes</h3>
+        <div class="info-extra">
+            <p>Las redes domésticas y empresariales también necesitan protección Algunas medidas incluyen</p>
+          <ul>
+            <li>Instalar cortafuegos (firewalls) para controlar el tráfico que entra y sale de la red</li>
+            <li>Usar antivirus y antispyware actualizados</li>
+            <li>Cambiar las contraseñas predeterminadas de routers y dispositivos conectados</li>
+            <li>Implementar redes privadas virtuales (VPN) para cifrar la conexión, especialmente en lugares públicos</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      document.querySelectorAll('.circle-link').forEach(link => link.classList.toggle('show'));
+    }
+
+    function toggleModulo(modulo) {
+      modulo.classList.toggle('activo');
+      modulo.classList.add('revisado');
+    }
+  </script>
+</body>
+</html>

@@ -5,134 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Historia del Internet</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Montserrat', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #0d1117;
-      color: #e6edf3;
-    }
-    .menu-toggle {
-position: fixed;
-      top: 1rem;
-      left: 1rem;
-      background: none;
-      border: none;
-      font-size: 1.5rem;
-      color: #58a6ff;
-      z-index: 1101;
-      cursor: pointer;
-}
-
-    nav {
-      width: 230px;
-      background-color: #161b22;
-      color: #c9d1d9;
-      padding: 1rem;
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 30vh;
-      transform: translateY(-100%);
-      transition: transform 0.3s ease-in;
-      z-index: 1000;
-      border-right: 1px solid #1d1f2e;
-    }
-    nav.open {
-      transform: translateX(0);
-    }
-    nav h2 {
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-    }
-    nav li {
-      margin-bottom: 1rem;
-    }
-    nav a {
-      color: #58a6ff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #79c0ff;
-      text-decoration: underline;
-    }
-    header {
-      background-color: #21262d;
-      padding: 2rem;
-      text-align: center;
-      border-bottom: 1px solid #30363d;
-    }
-    header h1 {
-      margin: 0;
-      color: #58a6ff;
-    }
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-    }
-    section {
-      background-color: #161b22;
-      border: 1px solid #30363d;
-      border-radius: 1rem;
-      padding: 2rem;
-      margin-bottom: 2rem;
-    }
-    section h2, section h3 {
-      color: #79c0ff;
-    }
-    .img-placeholder {
-      margin-bottom: 1rem;
-    }
-    .img-placeholder img {
-      max-width: 100%;
-      border-radius: 0.5rem;
-      box-shadow: 0 0 10px #0d1117;
-    }
-    ul {
-      padding-left: 1.5rem;
-    }
-    li {
-      margin-bottom: 0.5rem;
-    }
-    .highlight {
-      background-color: #21262d;
-      border-left: 4px solid #58a6ff;
-      padding: 1rem;
-      margin-top: 2rem;
-      font-style: italic;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      color: #8b949e;
-    }
-    footer button {
-      background-color: #238636;
-      color: white;
-      border: none;
-      padding: 0.6rem 1.2rem;
-      border-radius: 0.5rem;
-      cursor: pointer;
-      margin-top: 1rem;
-    }
-    #fuentes a {
-      color: #58a6ff;
-    }
-  </style>
+  <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
   <div class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('open')">
     ☰
   </div>
+<div class="menu-circles">
+  <a href="seguridad.html" class="circle-link circle1">Seguridad</a>
+  <a href="tecnologias.html" class="circle-link circle2">Tecnología</a>
+  <a href="servicios.html" class="circle-link circle3">Servicios</a>
+  <a href="componentes.html" class="circle-link circle4">Componentes</a>
+  <a href="index.html" class="circle-link circle5">Inicio</a>
+</div>
+
   <nav>
-    
     <ul><br><br>
       <li><a href="index.html">Origen y evolución</a></li>
       <li><a href="tecnologias.html">Nuevas tecnologías</a></li>
@@ -144,46 +31,61 @@ position: fixed;
   <header>
     <h1>Un largo viaje por el internet</h1>
   </header>
-  <main>
-    <section>
-      <div class="img-placeholder">
-        <img src="img/internet.png" alt="Imagen del origen del Internet">
-      </div>
-      <h2> Antecedentes históricos (ARPANET y sus orígenes militares)</h2>
-      <p>
+  <main class="timeline">
+    <div class="timeline-block">
+      <h2>Antecedentes históricos (ARPANET y sus orígenes militares)</h2>
+      <div class="timeline-content">
+        <img src="img/arpanet I.jpeg" alt="">
+         <p>
        El origen del Internet se remonta a finales de los años 60, cuando el Departamento de Defensa de Estados Unidos creó <strong>ARPANET</strong>, una red de computadoras diseñada para mantener la comunicación entre distintas bases militares y centros de investigación, incluso en caso de guerra. Esta red fue pionera en el uso del protocolo de conmutación de paquetes, base fundamental de lo que hoy conocemos como Internet
       </p>
-
-      <h3>Evolución del uso de militar y académico a civil y comercial</h3>
-      <p>
+     
+      </div>
+    </div>
+    <div class="timeline-block">
+      <h2>EEvolución del uso de militar y académico a civil y comercial</h2>
+      <div class="timeline-content">
+         <p>
         Durante los años 70 y 80, <strong> ARPANET </strong> fue adoptada por universidades e instituciones académicas para compartir información entre investigadores. A finales de los 80 e inicios de los 90, el acceso comenzó a abrirse al público y a empresas privadas, marcando el comienzo del uso comercial del Internet
       </p>
-
-      <h3> El nacimiento del World Wide Web</h3>
+       <img src="img/arpanet años70.png" alt="">
+      </div>
+    </div>
+    <div class="timeline-block">
+      <h2>El nacimiento del World Wide Web</h2>
+      <div class="timeline-content">
       <p>
         En 1989, el científico británico Tim Berners-Lee desarrolló la World Wide Web (WWW), un sistema que permitía navegar entre documentos a través de hipervínculos. Esta innovación introdujo los sitios web, el uso de navegadores y el lenguaje HTML, transformando el Internet en una herramienta accesible y visual para todo tipo de usuarios
-      </p>
-
-      <h3>Etapas del Internet (Web 1.0, Web 2.0, Web 3.0)</h3>
-      <p>
+      </p>     
+      <img src="img/nacimientoDelWWW.png" alt="">
+      </div>
+    </div>
+    <div class="timeline-block">
+      <h2>Etapas del Internet</h2>
+      <div class="timeline-content">
+         <p>
 <li>Web 1.0 (años 90): Los sitios eran estáticos, solo se podía leer información. No había interacción con los usuarios.</li>
 <li>Web 2.0 (2000 en adelante): Se introdujo la participación del usuario. Surgieron redes sociales, blogs, comentarios, y la web se volvió interactiva.</li>      
 <li>Web 3.0 (actualidad): Está enfocada en la descentralización, la inteligencia artificial, y la personalización del contenido. Aquí entran tecnologías como blockchain y el metaverso.</li>
 </p>
-
-      <h2>Expansión global del acceso a Internet</h2>
-    <p>A partir de los años 2000, el acceso a Internet creció exponencialmente en todo el mundo. La instalación de cables submarinos, el desarrollo de redes móviles y la aparición de servicios inalámbricos permitió que millones de personas se conectaran, incluso en regiones alejadas</p>
-
-      <h2> Impacto social y cultural</h2>
-      <p>
+<img src="img/etapas de internet.jpg" alt="">
+      </div>
+    </div>
+    <div class="timeline-block">
+      <h2>Expansión global de <Strong>Internet</Strong></h2>
+      <div class="timeline-content">
+       <p>A partir de los años 2000, el acceso a Internet creció exponencialmente en todo el mundo. La instalación de cables submarinos, el desarrollo de redes móviles y la aparición de servicios inalámbricos permitió que millones de personas se conectaran, incluso en regiones alejadas</p>
+<img src="img/expancion.jpg" alt="">
+      </div>
+    </div>
+    <div class="timeline-block">
+      <h2>Impacto social y cultural</h2>
+      <div class="timeline-content">
+       <p>
         El Internet ha cambiado radicalmente la forma en que nos comunicamos, trabajamos, aprendemos y consumimos contenido. Ha permitido el desarrollo del comercio digital, la educación en línea, el activismo social, y ha creado nuevas formas de cultura digital como los memes, los influencers o los videojuegos en línea
       </p>
-     
-
-      <div class="highlight">
-       Lo que en su momento fue una iniciativa con fines militares, hoy se ha convertido en la base que mantiene al mundo interconectado. Internet dejó de ser una promesa del futuro; ahora forma parte esencial del presente.
-      </div>
-    </section>
+    <img src="img/ultimaIimagen.webp" alt=""></div>
+    </div>
   </main>
 
   <footer>
@@ -191,20 +93,43 @@ position: fixed;
     <button onclick="toggleSources()">Fuentes</button>
     <div id="fuentes" style="display: none; margin-top: 1rem;">
       <ol>
-        <li><a href="https://es.wikipedia.org/wiki/Historia_de_Internet" target="_blank">Historia del internet</a></li>
-        <li><a href="https://fundaciontelefonica.com/educaciondigital/iot/" target="_blank">Fundacion telefonica ioT</a></li>
-        <li><a href="https://cmapspublic2.ihmc.us/rid=1239136955718_1163871558_10281/historia%20internet.pdf" target="_blank">Historia de Internet</a></li>
-        <li><a href="https://blog.orange.es/consejos-y-trucos/servicios-de-internet/" target="_blank">Servicios de Internet</a></li>
-        <li><a href="https://latam.kaspersky.com/resource-center/definitions/what-is-internet-security" target="_blank">Seguridad de internet</a></li>
+        <li><a href="https://es.wikipedia.org/wiki/Historia_de_Internet" target="_blank">Wikipedia</a></li>
+        <li><a href="https://fundaciontelefonica.com/educaciondigital/iot/" target="_blank">Fundación Telefónica</a></li>
       </ol>
     </div>
   </footer>
 
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
   <script>
+    document.querySelectorAll('.timeline-block').forEach(block => {
+      block.addEventListener('click', () => {
+        const content = block.querySelector('.timeline-content').innerHTML;
+        document.getElementById('modal-body').innerHTML = content;
+        document.getElementById('modal').style.display = 'block';
+      });
+    });
+    function closeModal() {
+      document.getElementById('modal').style.display = 'none';
+    }
     function toggleSources() {
       const fuenteDiv = document.getElementById("fuentes");
       fuenteDiv.style.display = fuenteDiv.style.display === "none" ? "block" : "none";
     }
   </script>
 </body>
+<script>
+  const toggleBtn = document.querySelector('.menu-toggle');
+  const circles = document.querySelectorAll('.circle-link');
+
+  toggleBtn.addEventListener('click', () => {
+    circles.forEach(c => c.classList.toggle('show'));
+  });
+</script>
+
 </html>

@@ -1,281 +1,105 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Servicios del Internet</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-  
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #0d1117;
-      color: #e6edf3;
-    }
-  
-    .menu-toggle {
-      position: fixed;
-      top: 1rem;
-      left: 1rem;
-      background: none;
-      border: none;
-      font-size: 1.5rem;
-      color: #58a6ff;
-      z-index: 1101;
-      cursor: pointer;
-    }
-  
-    nav {
-        width: 250px;
-      background-color: #161b22;
-      color: white;
-      padding: 1rem;
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 30vh;
-      transform: translateY(-100%);
-      transition: transform 0.3s ease-in;
-      z-index: 1000;
-      border-right: 1px solid #30363d;
-    }
-  
-    nav.open {
-      transform: translateX(0);
-    }
-  
-    nav h2 {
-      font-size: 1.3rem;
-      margin-bottom: 1.5rem;
-      color: #58a6ff;
-    }
-  
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-  
-    nav li {
-      margin-bottom: 1rem;
-    }
-  
-    nav a {
-      color: #58a6ff;
-      text-decoration: none;
-      font-weight: bold;
-      display: block;
-      transition: background-color 0.2s;
-    }
-  
-    nav a:hover {
-      background-color: #21262d;
-      color: #79c0ff;
-    }
-  
-    header {
-      background-color: #161b22;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-      border-bottom: 1px solid #30363d;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    }
-  
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-      color: #58a6ff;
-    }
-  
-    main {
-      max-width: 1200px;
-      margin: auto;
-      padding: 2rem 1rem;
-    }
-  
-    section {
-      background-color: #161b22;
-      padding: 1.5rem;
-      border-radius: 1rem;
-      margin-top: 2rem;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-      border: 1px solid #30363d;
-      transition: transform 0.2s ease;
-    }
-  
-    section:hover {
-      transform: scale(1.01);
-    }
-  
-    h2 {
-      color: #79c0ff;
-      margin-top: 0;
-    }
-  
-    h3 {
-      color: #58a6ff;
-    }
-  
-    p, li {
-      font-size: 1rem;
-      line-height: 1.6;
-      color: #e6edf3;
-    }
-  
-    ul {
-      padding-left: 1.2rem;
-    }
-  
-    .img-placeholder,
-    .img-container {
-      text-align: center;
-      margin: 1.5rem 0;
-      background-color: #21262d;
-      border-radius: 0.75rem;
-      padding: 1rem;
-    }
-  
-    .img-placeholder img,
-    .img-container img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 0.75rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-    }
-  
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-  
-    .col {
-      flex: 1 1 45%;
-      min-width: 280px;
-    }
-  
-    footer {
-      margin-top: 2rem;
-      text-align: center;
-      color: #8b949e;
-      padding: 1.5rem;
-      background-color: #161b22;
-      border-top: 1px solid #30363d;
-    }
-  
-    @media (max-width: 768px) {
-      .row {
-        flex-direction: column;
-      }
-  
-      nav {
-        padding-top: 4rem;
-      }
-    }
-  </style>
-  
+  <link rel="stylesheet" href="modulos.css">
 </head>
 <body>
-  <div class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('open')">
-     ☰
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <div class="menu-circles">
+    <a href="Seguridad.html" class="circle-link circle1">Seguridad</a>
+    <a href="componentes.html" class="circle-link circle2">Componentes</a>
+    <a href="servicios.html" class="circle-link circle3">Servicios</a>
+    <a href="tecnologias.html" class="circle-link circle4">Tecnologías</a>
+    <a href="index.html" class="circle-link circle5">Inicio</a>
   </div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Origen y evolución</a></li>
-      <li><a href="tecnologias.html">Nuevas tecnologías</a></li>
-      <li><a href="servicios.html">Servicios del Internet</a></li>
-      <li><a href="componentes.html">Componentes esenciales</a></li>
-      <li><a href="seguridad.html">Seguridad en Internet</a></li>
-      
-    </ul>
-  </nav>
-  <div class="content">
-    <header>
-      <h1>Servicios del Internet</h1>
-    </header>
-    <main>
-      <section>
-        <div class="img-placeholder"><img src="img/servicios-de-internet-2.jpg" alt=""></div>
-        <p><strong><h3>  <p>El Internet no solo conecta personas, sino que también ofrece una gran variedad de servicios que han transformado nuestra vida diaria. Estos servicios permiten acceder a información, comunicarnos, comprar, aprender y entretenernos de formas que antes no eran posibles. A continuación, te presentamos los principales servicios que ofrece el Internet:</p>
-</h3></strong></p>
-      </section>
+    <header><h1>Servicios del Internet</h1></header>
+  <div class="contenido">
+    <div class="linea-conexion"></div>
 
-      
-      <section class="row">
-        <div class="col-text">
-          <h3>World Wide Web (WWW)</h3>
-<p>La World Wide Web, o simplemente “la web”, es uno de los servicios más conocidos del Internet. Permite acceder a millones de sitios web a través de navegadores como Chrome, Firefox o Edge. Gracias al uso de lenguajes como HTML, CSS y JavaScript, los sitios pueden presentar información de manera visual e interactiva. La web es el espacio donde se encuentran portales de noticias, blogs, foros, redes sociales y mucho más.
+    <div class="modulo" onclick="toggleModulo(this)">
+      <img src="img/servicios-de-internet-2.jpg" alt="">
+      <div>
+        <h3>¿Qué servicios ofrece?</h3>
+        <div class="info-extra">
+           <p>El Internet no solo conecta personas, sino que también ofrece una gran variedad de servicios que han transformado nuestra vida diaria. Estos servicios permiten acceder a información, comunicarnos, comprar, aprender y entretenernos de formas que antes no eran posibles. A continuación, te presento los principales servicios que ofrece el Internet</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="modulo" onclick="toggleModulo(this)">
+      <img src="img/WWW S.webp" alt="">
+      <div>
+        <h3>World Wide Web</h3>
+        <div class="info-extra">
+          <p>La World Wide Web, o simplemente “la web”, es uno de los servicios más conocidos del Internet. Permite acceder a millones de sitios web a través de navegadores como Chrome, Firefox o Edge. Gracias al uso de lenguajes como HTML, CSS y JavaScript, los sitios pueden presentar información de manera visual e interactiva. La web es el espacio donde se encuentran portales de noticias, blogs, foros, redes sociales y mucho más
 </p>
+        </div>
+      </div>
+    </div>
 
+    <div class="modulo" onclick="toggleModulo(this)">
+      <img src="img/EMAIL S.jpg" alt="">
+      <div>
+        <h3>Correo Electrónico</h3>
+        <div class="info-extra">
+           <p>El email fue uno de los primeros servicios ampliamente utilizados en Internet. Permite enviar y recibir mensajes instantáneos desde cualquier parte del mundo. Hoy en día, plataformas como Gmail, Outlook o Yahoo! ofrecen funciones avanzadas como adjuntar archivos, crear filtros y programar correos. Es un medio esencial en el mundo laboral, educativo y personal</p>
         </div>
-        <div class="col-img">
-          <img src="img/WWW S.webp" alt="">
-        </div>
-      </section>
+      </div>
+    </div>
 
-      <section class="row">
-        <div class="col-img">
-          <img src="img/EMAIL S.jpg" alt="">
+    <div class="modulo" onclick="toggleModulo(this)">
+      <img src="img/e comerce s.webp" alt="">
+      <div>
+        <h3>Comercio electrónico</h3>
+        <div class="info-extra">
+         <p>El comercio electrónico ha revolucionado la forma de comprar y vender productos o servicios. Sitios como Amazon, MercadoLibre o AliExpress permiten realizar compras desde casa, con envíos a domicilio y múltiples opciones de pago. Además, muchas pequeñas empresas han creado tiendas en línea, facilitando el acceso a nuevos mercados. El e-commerce también incluye servicios como banca en línea, pagos móviles y suscripciones digitales</p>
         </div>
-        <div class="col-text">
-          <h3>Correo Electrónico (EMAIL)</h3>
-           <p>El email fue uno de los primeros servicios ampliamente utilizados en Internet. Permite enviar y recibir mensajes instantáneos desde cualquier parte del mundo. Hoy en día, plataformas como Gmail, Outlook o Yahoo! ofrecen funciones avanzadas como adjuntar archivos, crear filtros y programar correos. Es un medio esencial en el mundo laboral, educativo y personal.</p>
+      </div>
+    </div>
 
+    <div class="modulo" onclick="toggleModulo(this)">
+      <img src="img/e d.webp" alt="">
+      <div>
+        <h3>Educación en línea</h3>
+        <div class="info-extra">
+         <p>El Internet ha democratizado el acceso a la educación. A través de plataformas como Coursera, Khan Academy, Udemy o Moodle, las personas pueden estudiar desde cualquier lugar del mundo, en cualquier momento. Desde cursos básicos hasta especializaciones universitarias, el e-learning ofrece flexibilidad y una enorme variedad de contenidos.</p>
         </div>
-      </section>
+      </div>
+    </div>
 
-       <section class="row">
-        <div class="col-text">
-          <h3>Comercio electrónico (E-commerce)</h3>
-          <p>El comercio electrónico ha revolucionado la forma de comprar y vender productos o servicios. Sitios como Amazon, MercadoLibre o AliExpress permiten realizar compras desde casa, con envíos a domicilio y múltiples opciones de pago. Además, muchas pequeñas empresas han creado tiendas en línea, facilitando el acceso a nuevos mercados. El e-commerce también incluye servicios como banca en línea, pagos móviles y suscripciones digitales.</p>
+    <div class="modulo" onclick="toggleModulo(this)">
+      <img src="img/Buscadores-y-Navegadores-2.webp" alt="">
+      <div>
+        <h3>Buscadores</h3>
+        <div class="info-extra">
+           <p>Los buscadores permiten encontrar información rápidamente en la web. Yahoo fue uno de los primeros, creado en 1994. Actualmente, Google domina el mercado gracias a su algoritmo de posicionamiento que ofrece resultados relevantes y ordenados.</p>
         </div>
-        <div class="col-img">
-          <img src="img/e comerce s.webp" alt="Descripción de imagen">
-        </div>
-      </section>
+      </div>
+    </div>
 
-      <section class="row">
-        <div class="col-img">
-          <img src="img/e d.webp" alt="Otra descripción">
+    <div class="modulo" onclick="toggleModulo(this)">
+      <img src="img/servicios-almacenamiento-nube.webp" alt="">
+      <div>
+        <h3>Servicios en la nube</h3>
+        <div class="info-extra">
+           <p>Herramientas como Google Drive, Dropbox, Microsoft OneDrive y servicios de oficina en línea permiten guardar archivos, trabajar en equipo y compartir documentos sin importar la ubicación. Además, existen aplicaciones de calendario, videollamadas (como Zoom o Google Meet) y mensajería instantánea (como WhatsApp o Telegram) que facilitan el trabajo y la comunicación diaria.</p>
         </div>
-        <div class="col-text">
-          <h3> Educación en línea (e-learning)</h3>
-          <p>El Internet ha democratizado el acceso a la educación. A través de plataformas como Coursera, Khan Academy, Udemy o Moodle, las personas pueden estudiar desde cualquier lugar del mundo, en cualquier momento. Desde cursos básicos hasta especializaciones universitarias, el e-learning ofrece flexibilidad y una enorme variedad de contenidos.</p>
-
-        </div>
-      </section>
-
-       <section class="row">
-        <div class="col-text">
-          <h3>Buscadores</h3>
-          <p>Los buscadores permiten encontrar información rápidamente en la web. Yahoo fue uno de los primeros, creado en 1994. Actualmente, Google domina el mercado gracias a su algoritmo de posicionamiento que ofrece resultados relevantes y ordenados.</p>
-
-        </div>
-        <div class="col-img">
-          <img src="img/Buscadores-y-Navegadores-2.webp" alt="Descripción de imagen">
-        </div>
-      </section>
-
-      <section class="row">
-        <div class="col-img">
-          <img src="img/servicios-almacenamiento-nube.webp" alt="Otra descripción">
-        </div>
-        <div class="col-text">
-          <h3> Servicios de almacenamiento y productividad</h3>
-          <p>Herramientas como Google Drive, Dropbox, Microsoft OneDrive y servicios de oficina en línea permiten guardar archivos, trabajar en equipo y compartir documentos sin importar la ubicación. Además, existen aplicaciones de calendario, videollamadas (como Zoom o Google Meet) y mensajería instantánea (como WhatsApp o Telegram) que facilitan el trabajo y la comunicación diaria.</p>
-
-        </div>
-      </section>
-
-    </main>
-    <footer>
-     <p>2025 Historia del Internet </p>
-    </footer>
+      </div>
+    </div>
   </div>
+
+  <script>
+    function toggleMenu() {
+      document.querySelectorAll('.circle-link').forEach(link => link.classList.toggle('show'));
+    }
+
+    function toggleModulo(modulo) {
+      modulo.classList.toggle('activo');
+      modulo.classList.add('revisado');
+    }
+  </script>
 </body>
 </html>

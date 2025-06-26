@@ -1,254 +1,91 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>tecnologias</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-  
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #0d1117;
-      color: #e6edf3;
-    }
-  
-    .menu-toggle {
-      position: fixed;
-      top: 1rem;
-      left: 1rem;
-      background: none;
-      border: none;
-      font-size: 1.5rem;
-      color: #58a6ff;
-      z-index: 1101;
-      cursor: pointer;
-    }
-  
-    nav {
-        width: 250px;
-      background-color: #161b22;
-      color: white;
-      padding: 1rem;
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 30vh;
-      transform: translateY(-100%);
-      transition: transform 0.3s ease-in;
-      z-index: 1000;
-      border-right: 1px solid #30363d;
-    }
-  
-    nav.open {
-      transform: translateX(0);
-    }
-  
-    nav h2 {
-      font-size: 1.3rem;
-      margin-bottom: 1.5rem;
-      color: #58a6ff;
-    }
-  
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-  
-    nav li {
-      margin-bottom: 1rem;
-    }
-  
-    nav a {
-      color: #58a6ff;
-      text-decoration: none;
-      font-weight: bold;
-      display: block;
-      transition: background-color 0.2s;
-    }
-  
-    nav a:hover {
-      background-color: #21262d;
-      color: #79c0ff;
-    }
-  
-    header {
-      background-color: #161b22;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-      border-bottom: 1px solid #30363d;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    }
-  
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-      color: #58a6ff;
-    }
-  
-    main {
-      max-width: 1200px;
-      margin: auto;
-      padding: 2rem 1rem;
-    }
-  
-    section {
-      background-color: #161b22;
-      padding: 1.5rem;
-      border-radius: 1rem;
-      margin-top: 2rem;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-      border: 1px solid #30363d;
-      transition: transform 0.2s ease;
-    }
-  
-    section:hover {
-      transform: scale(1.01);
-    }
-  
-    h2 {
-      color: #79c0ff;
-      margin-top: 0;
-    }
-  
-    h3 {
-      color: #58a6ff;
-    }
-  
-    p, li {
-      font-size: 1rem;
-      line-height: 1.6;
-      color: #e6edf3;
-    }
-  
-    ul {
-      padding-left: 1.2rem;
-    }
-  
-    .img-placeholder,
-    .img-container {
-      text-align: center;
-      margin: 1.5rem 0;
-      background-color: #21262d;
-      border-radius: 0.75rem;
-      padding: 1rem;
-    }
-  
-    .img-placeholder img,
-    .img-container img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 0.75rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-    }
-  
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-  
-    .col {
-      flex: 1 1 45%;
-      min-width: 280px;
-    }
-  
-    footer {
-      margin-top: 2rem;
-      text-align: center;
-      color: #8b949e;
-      padding: 1.5rem;
-      background-color: #161b22;
-      border-top: 1px solid #30363d;
-    }
-  
-    @media (max-width: 768px) {
-      .row {
-        flex-direction: column;
-      }
-  
-      nav {
-        padding-top: 4rem;
-      }
-    }
-  </style>
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuevas Tecnologías</title>
+  <link rel="stylesheet" href="modulos.css">
 </head>
 <body>
-  <div class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('open')">
-     ☰
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <div class="menu-circles">
+    <a href="Seguridad.html" class="circle-link circle1">Seguridad</a>
+    <a href="componentes.html" class="circle-link circle2">Componentes</a>
+    <a href="servicios.html" class="circle-link circle3">Servicios</a>
+    <a href="tecnologias.html" class="circle-link circle4">Tecnologías</a>
+    <a href="index.html" class="circle-link circle5">Inicio</a>
   </div>
-  <nav>
-    <ul>
-    <li><a href="index.html">Origen y evolución</a></li>
-      <li><a href="tecnologias.html">Nuevas tecnologías</a></li>
-      <li><a href="servicios.html">Servicios del Internet</a></li>
-      <li><a href="componentes.html">Componentes esenciales</a></li>
-      <li><a href="seguridad.html">Seguridad en Internet</a></li>
-    </ul>
-  </nav>
-  <div class="content">
-    <header>
-      <h1>Nuevas tecnologias</h1>
-    </header>
-    <main>
-      <section>
-        <div class="img-placeholder"><img src="img/tecnologias emergentes.png" alt=""></div>
-        <p><strong>  <h2>Tecnologías Nuevas o Emergentes</h2>
-  <p>
+  <header><h1>Nuevas tecnologias</h1></header>
+  <div class="contenido">
+    <div class="linea-conexion"></div>
+
+    <div class="modulo" onclick="toggleModulo(this)">
+      <img src="img/tecnologias emergentes.png" alt="">
+      <div>
+        <h3>¿Qué son?</h3>
+        <div class="info-extra">
+          <p>IA, Big Data, IoT han transformado salud, educación, industria, etc.</p>
+          <p>
 En las últimas décadas, el avance del Internet ha impulsado el desarrollo de una gran variedad de tecnologías nuevas y emergentes que están transformando la forma en que vivimos, trabajamos y nos comunicamos. Estas tecnologías no solo han mejorado la eficiencia de muchos procesos, sino que también han abierto nuevas oportunidades en áreas como la salud, la educación, la industria y el entretenimiento.
 
 Entre las más destacadas se encuentran la Inteligencia Artificial (IA), capaz de imitar ciertas funciones del pensamiento humano; el Big Data, que permite analizar enormes volúmenes de información en tiempo real; y el Internet de las Cosas (IoT), que conecta objetos cotidianos a la red para hacerlos más inteligentes y funcionales.  </p>
   <p>
 Estas innovaciones están en constante evolución y su impacto seguirá creciendo en los próximos años, por lo que conocerlas y entender su funcionamiento es clave para adaptarse al mundo actual y al futuro que se está construyendo.
   </p>
+        </div>
+      </div>
+    </div>
 
-
-  </p></strong></p>
-      </section>
-
-      <section class="row">
-        <div class="col-text">
-      <h3>Internet de las Cosas</h3>
-  <p>
+    <div class="modulo" onclick="toggleModulo(this)">
+      <img src="img/internetenlascosas.png" alt="">
+      <div>
+        <h3>Internet de las Cosas</h3>
+        <div class="info-extra">
+          <p>Casas inteligentes, agricultura conectada, sensores en industrias...</p>
+           <p>
 Internet de las Cosas (IoT)
 El Internet de las Cosas permite conectar objetos cotidianos a Internet, desde electrodomésticos hasta vehículos. Esto ha dado lugar a casas inteligentes (smart homes), donde puedes controlar luces, cerraduras y termostatos desde tu celular. También ha transformado la industria con sensores en fábricas, agricultura inteligente y ciudades conectadas que gestionan recursos de forma eficiente
 </p>
- 
         </div>
-        <div class="col-img">
-          <img src="World-Wide-Web.jpg" alt="">
-        </div>
-      </section>
+      </div>
+    </div>
 
-      <section class="row">
-        <div class="col-img">
-          <img src="img/IA2.webp" alt="">
-        </div>
-        <div class="col-text">
-           <h3> Inteligencia Artificial (IA)</h3>
-  <p>
+    <div class="modulo" onclick="toggleModulo(this)">
+      <img src="img/IA2.webp" alt="">
+      <div>
+        <h3>Inteligencia Artificial</h3>
+        <div class="info-extra">
+          <p>Asistentes como Alexa, reconocimiento de voz, imágenes...</p>
+          <p>
 La Inteligencia Artificial ha avanzado enormemente gracias a la conectividad y al intercambio masivo de datos en Internet. Hoy en día, existen asistentes virtuales como Siri, Alexa o Google Assistant que entienden y responden preguntas, sistemas de traducción automática, y algoritmos capaces de reconocer rostros, objetos, patrones y hasta generar textos o imágenes, como lo hace ChatGPT. Estas tecnologías dependen de grandes cantidades de datos que solo son posibles de procesar con conexión a Internet.  </p>
  
         </div>
-      </section>
+      </div>
+    </div>
 
-       <section class="row">
-        <div class="col-text">
-           <h3>Big Data</h3>
-  <p>
+    <div class="modulo" onclick="toggleModulo(this)">
+      <img src="img/big data TE.png" alt="">
+      <div>
+        <h3>Big Data</h3>
+        <div class="info-extra">
+          <p>Datos masivos para tomar decisiones en negocios, salud...</p>
+          <p>
 Big Data se refiere al manejo y análisis de enormes volúmenes de datos generados por personas, empresas y dispositivos conectados. Gracias al Internet, cada clic, búsqueda, compra o publicación se convierte en información útil para detectar patrones, tomar decisiones estratégicas o predecir comportamientos. Empresas de todos los sectores, desde salud hasta marketing, aprovechan Big Data para mejorar sus servicios.  </p>
   
-            </div>
-        <div class="col-img">
-          <img src="img/big data TE.png"Descripción de imagen">
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      document.querySelectorAll('.circle-link').forEach(link => link.classList.toggle('show'));
+    }
+
+    function toggleModulo(modulo) {
+      modulo.classList.toggle('activo');
+      modulo.classList.add('revisado');
+    }
+  </script>
 </body>
 </html>

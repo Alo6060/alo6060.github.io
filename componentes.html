@@ -1,213 +1,40 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Componentes</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-  
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #0d1117;
-      color: #e6edf3;
-    }
-  
-    .menu-toggle {
-      position: fixed;
-      top: 1rem;
-      left: 1rem;
-      background: none;
-      border: none;
-      font-size: 1.5rem;
-      color: #58a6ff;
-      z-index: 1101;
-      cursor: pointer;
-    }
-  
-    nav {
-        width: 230px;
-      background-color: #161b22;
-      color: white;
-      padding: 1rem;
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 30vh;
-      transform: translateY(-100%);
-      transition: transform 0.3s ease-in;
-      z-index: 1000;
-      border-right: 1px solid #30363d;
-    }
-  
-    nav.open {
-      transform: translateX(0);
-    }
-  
-    nav h2 {
-      font-size: 1.3rem;
-      margin-bottom: 1.5rem;
-      color: #58a6ff;
-    }
-  
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-  
-    nav li {
-      margin-bottom: 1rem;
-    }
-  
-    nav a {
-      color: #58a6ff;
-      text-decoration: none;
-      font-weight: bold;
-      display: block;
-      transition: background-color 0.2s;
-    }
-  
-    nav a:hover {
-      background-color: #21262d;
-      color: #79c0ff;
-    }
-  
-    header {
-      background-color: #161b22;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-      border-bottom: 1px solid #30363d;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    }
-  
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-      color: #58a6ff;
-    }
-  
-    main {
-      max-width: 1200px;
-      margin: auto;
-      padding: 2rem 1rem;
-    }
-  
-    section {
-      background-color: #161b22;
-      padding: 1.5rem;
-      border-radius: 1rem;
-      margin-top: 2rem;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-      border: 1px solid #30363d;
-      transition: transform 0.2s ease;
-    }
-  
-    section:hover {
-      transform: scale(1.01);
-    }
-  
-    h2 {
-      color: #79c0ff;
-      margin-top: 0;
-    }
-  
-    h3 {
-      color: #58a6ff;
-    }
-  
-    p, li {
-      font-size: 1rem;
-      line-height: 1.6;
-      color: #e6edf3;
-    }
-  
-    ul {
-      padding-left: 1.2rem;
-    }
-  
-    .img-placeholder,
-    .img-container {
-      text-align: center;
-      margin: 1.5rem 0;
-      background-color: #21262d;
-      border-radius: 0.75rem;
-      padding: 1rem;
-    }
-  
-    .img-placeholder img,
-    .img-container img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 0.75rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-    }
-  
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-  
-    .col {
-      flex: 1 1 45%;
-      min-width: 280px;
-    }
-  
-    footer {
-      margin-top: 2rem;
-      text-align: center;
-      color: #8b949e;
-      padding: 1.5rem;
-      background-color: #161b22;
-      border-top: 1px solid #30363d;
-    }
-  
-    @media (max-width: 768px) {
-      .row {
-        flex-direction: column;
-      }
-  
-      nav {
-        padding-top: 4rem;
-      }
-    }
-  </style>
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Componentes del Internet</title>
+  <link rel="stylesheet" href="modulos.css">
 </head>
 <body>
-  <div class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('open')">
-     ☰
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <div class="menu-circles">
+    <a href="Seguridad.html" class="circle-link circle1">Seguridad</a>
+    <a href="componentes.html" class="circle-link circle2">Componentes</a>
+    <a href="servicios.html" class="circle-link circle3">Servicios</a>
+    <a href="tecnologias.html" class="circle-link circle4">Tecnologías</a>
+    <a href="index.html" class="circle-link circle5">Inicio</a>
   </div>
-  <nav>
-    <ul>
-     <li><a href="index.html">Origen y evolución</a></li>
-      <li><a href="tecnologias.html">Nuevas tecnologías</a></li>
-      <li><a href="servicios.html">Servicios del Internet</a></li>
-      <li><a href="componentes.html">Componentes esenciales</a></li>
-      <li><a href="seguridad.html">Seguridad en Internet</a></li>
-    </ul>
-  </nav>
-  <div class="content">
-    <header>
-      <h1>Componentes que Conforman el internet</h1>
-    </header>
-    <main>
-      <section>
-        <div class="img-placeholder"><img src="img/componentes.webp" alt=""></div>
-      <p>El Internet es una red global que funciona gracias a la interacción de múltiples componentes, tanto físicos como lógicos. Estos elementos trabajan juntos para que podamos acceder a sitios web, enviar mensajes, ver videos en línea o simplemente navegar desde nuestros dispositivos. A continuación, te explicamos los principales componentes que hacen posible el funcionamiento de Internet</p>
-     
-      </section>
+    <header><h1>Componentes del Internet</h1></header>
+  <div class="contenido">
+    <div class="linea-conexion"></div>
 
-      <section class="row">
-        <div class="col-text">
-          <h2> Proveedores de servicios de Internet (ISP)</h2>
-        <p>El Internet no funcionaría sin un conjunto de reglas llamadas protocolos, que permiten que los dispositivos se entiendan entre sí</p>
+    <div class="modulo" onclick="toggleModulo(this)">
+      <img src="img/componentes.webp" alt="">
+      <div>
+        <h3>¿Qué es Internet?</h3>
+        <div class="info-extra">
+         <p>El Internet es una red global que funciona gracias a la interacción de múltiples componentes, tanto físicos como lógicos. Estos elementos trabajan juntos para que podamos acceder a sitios web, enviar mensajes, ver videos en línea o simplemente navegar desde nuestros dispositivos. A continuación, te explicamos los principales componentes que hacen posible el funcionamiento de Internet</p>
+         </div>
+      </div>
+    </div>
+
+    <div class="modulo" onclick="toggleModulo(this)">
+      <img src="img/provedores ISP C.png" alt="">
+      <div>
+        <h3>Proveedores de servicios de Internet ISP y protocolos</h3>
+        <div class="info-extra">
+          <p>El Internet no funcionaría sin un conjunto de reglas llamadas protocolos, que permiten que los dispositivos se entiendan entre sí</p>
         <ul>
           <li>TCP/IP (Transmission Control Protocol / Internet Protocol): es la base de la comunicación en Internet, permite que los datos se dividan en paquetes y lleguen a su destino correctamente</li>
           <li>HTTP/HTTPS: protocolos que permiten acceder a páginas web. La versión segura (HTTPS) protege los datos mediante cifrado</li>
@@ -215,40 +42,51 @@
           <li>FTP (File Transfer Protocol): se usa para transferir archivos entre computadoras y servidores.</li>
         </ul>
         </div>
-        <div class="col-img">
-          <img src="World-Wide-Web.jpg" alt="">
-        </div>
-      </section>
+      </div>
+    </div>
 
-      <section class="row">
-        <div class="col-img">
-          <img src="correo.jpg" alt="">
-        </div>
-        <div class="col-text">
-          <h2>Equipos del usuario final</h2>
-        <p>Los dispositivos que utilizamos para acceder a Internet también son componentes esenciales. Estos incluyen</p>
+    <div class="modulo" onclick="toggleModulo(this)">
+      <img src="img/EquiposUsurio C.jpg" alt="">
+      <div>
+        <h3>Equipos del usuario final</h3>
+        <div class="info-extra">
+            <p>Los dispositivos que utilizamos para acceder a Internet también son componentes esenciales. Estos incluyen</p>
         <ul>
           <li>Computadoras, laptops, tablets y smartphones</li>
           <li>Routers y módems, que gestionan la conexión entre el proveedor de Internet y nuestros dispositivos</li>
           <li>Antenas Wi-Fi y tarjetas de red, que permiten la conectividad inalámbrica</li>
         </ul>
         <p>Estos equipos actúan como puertas de entrada al mundo digital</p>
+          
         </div>
-      </section>
+      </div>
+    </div>
 
-       <section class="row">
-        <div class="col-text">
-        <h2> Software y aplicaciones</h2>
-        <p>El software también es clave para interactuar con el Internet. Algunos ejemplos importantes son</p>
+    <div class="modulo" onclick="toggleModulo(this)">
+      <img src="img/sofware y aplicaiones.webp" alt="">
+      <div>
+        <h3>Software y aplicaciones</h3>
+        <div class="info-extra">
+           <p>El software también es clave para interactuar con el Internet. Algunos ejemplos importantes son</p>
         <ul>
           <li>Navegadores web (como Chrome, Firefox, Safari), que nos permiten acceder a páginas web</li>
           <li>Clientes de correo electrónico, servicios de mensajería y videollamadas</li>
           <li>Sistemas operativos que permiten que los dispositivos usen redes (como Windows, Android, iOS, Linux)</li>
         </ul>
-            </div>
-        <div class="col-img">
-          <img src="img/sofware y aplicaiones.webp" alt="Descripción de imagen">
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      document.querySelectorAll('.circle-link').forEach(link => link.classList.toggle('show'));
+    }
+
+    function toggleModulo(modulo) {
+      modulo.classList.toggle('activo');
+      modulo.classList.add('revisado');
+    }
+  </script>
 </body>
 </html>
