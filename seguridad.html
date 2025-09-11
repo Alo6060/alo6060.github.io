@@ -1,234 +1,58 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Seguridad</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-  
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #0d1117;
-      color: #e6edf3;
-    }
-  
-    .menu-toggle {
-      position: fixed;
-      top: 1rem;
-      left: 1rem;
-      background: none;
-      border: none;
-      font-size: 1.5rem;
-      color: #58a6ff;
-      z-index: 1101;
-      cursor: pointer;
-    }
-  
-   
-    nav {
-      width: 230px;
-      background-color: #161b22;
-      color: #c9d1d9;
-      padding: 1rem;
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 30vh;
-      transform: translateY(-100%);
-      transition: transform 0.3s ease-in;
-      z-index: 1000;
-      border-right: 1px solid #1d1f2e;
-      
-    }
-    nav.open {
-      transform: translateX(0);
-  
-    }
-    nav h2 {
-      font-size: 1.3rem;
-      margin-bottom: 1.5rem;
-      color: #58a6ff;
-    }
-  
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-  
-    nav li {
-      margin-bottom: 1rem;
-    }
-  
-    nav a {
-      color: #58a6ff;
-      text-decoration: none;
-      font-weight: bold;
-      display: block;
-      transition: background-color 0.2s;
-    }
-  
-    nav a:hover {
-      background-color: #21262d;
-      color: #79c0ff;
-    }
-  
-    header {
-      background-color: #161b22;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-      border-bottom: 1px solid #30363d;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    }
-  
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-      color: #58a6ff;
-    }
-  
-    main {
-      max-width: 1200px;
-      margin: auto;
-      padding: 2rem 1rem;
-    }
-  
-    section {
-      background-color: #161b22;
-      padding: 1.5rem;
-      border-radius: 1rem;
-      margin-top: 2rem;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-      border: 1px solid #30363d;
-      transition: transform 0.2s ease;
-    }
-  
-    section:hover {
-      transform: scale(1.01);
-    }
-  
-    h2 {
-      color: #79c0ff;
-      margin-top: 0;
-    }
-  
-    h3 {
-      color: #58a6ff;
-    }
-  
-    p, li {
-      font-size: 1rem;
-      line-height: 1.6;
-      color: #e6edf3;
-    }
-  
-    ul {
-      padding-left: 1.2rem;
-    }
-  
-    .img-placeholder,
-    .img-container {
-      text-align: center;
-      margin: 1.5rem 0;
-      background-color: #21262d;
-      border-radius: 0.75rem;
-      padding: 1rem;
-    }
-  
-    .img-placeholder img,
-    .img-container img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 0.75rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-    }
-  
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-  
-    .col {
-      flex: 1 1 45%;
-      min-width: 280px;
-    }
-  
-    footer {
-      margin-top: 2rem;
-      text-align: center;
-      color: #8b949e;
-      padding: 1.5rem;
-      background-color: #161b22;
-      border-top: 1px solid #30363d;
-    }
-  
-    @media (max-width: 768px) {
-      .row {
-        flex-direction: column;
-      }
-  
-      nav {
-        padding-top: 4rem;
-      }
-    }
-  </style>
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguridad en el Internet</title>
+  <link rel="stylesheet" href="modulos.css">
 </head>
 <body>
-  <div class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('open')">
-     ☰
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <div class="menu-circles">
+    <a href="Seguridad.html" class="circle-link circle1">Seguridad</a>
+    <a href="componentes.html" class="circle-link circle2">Componentes</a>
+    <a href="servicios.html" class="circle-link circle3">Servicios</a>
+    <a href="tecnologias.html" class="circle-link circle4">Tecnologías</a>
+    <a href="index.html" class="circle-link circle5">Inicio</a>
   </div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Origen y evolución</a></li>
-      <li><a href="tecnologias.html">Nuevas tecnologías</a></li>
-      <li><a href="servicios.html">Servicios del Internet</a></li>
-      <li><a href="componentes.html">Componentes esenciales</a></li>
-      <li><a href="seguridad.html">Seguridad en Internet</a></li>
-    </ul>
-  </nav>
-  <div class="content">
-    <header>
-      <h1>Seguridad en el internet</h1>
-    </header>
-    <main>
-      <section> <h2>¿Qué es?</h2>
-        <div class="img-placeholder"><img src="img/Seguriodad de internet.webp" alt=""></div>
-        <p>  
-        La seguridad en Internet es fundamental para proteger la información personal, la privacidad y la integridad de los sistemas conectados a la red. A medida que crecen los servicios digitales, también aumentan los riesgos, como virus, fraudes o robos de identidad. Por eso, es esencial conocer los principales aspectos de la ciberseguridad y aprender a navegar de forma segura.
-    </p>
-      </section>
+    <header><h1>Seguridad en Internet</h1></header>
+  <div class="contenido">
+    <div class="linea-conexion"></div>
 
-      <section class="row">
-        <div class="col-text">
-       <h2>Amenazas comunes en Internet</h2>
-          <p>Existen múltiples peligros a los que los usuarios están expuestos si no navegan con precaución</p>
+    <div class="modulo" onclick="toggleModulo(this)">
+      <img src="img/Seguriodad de internet.webp" alt="">
+      <div>
+        <h3>¿Qué es?</h3>
+        <div class="info-extra">
+            <p>  
+        La seguridad en Internet es fundamental para proteger la información personal, la privacidad y la integridad de los sistemas conectados a la red. A medida que crecen los servicios digitales, también aumentan los riesgos, como virus, fraudes o robos de identidad. Por eso, es esencial conocer los principales aspectos de la ciberseguridad y aprender a navegar de forma segura.
+    </p> </div>
+      </div>
+    </div>
+
+    <div class="modulo" onclick="toggleModulo(this)">
+      <img src="img/consejos-amenazas-internet.webp" alt="">
+      <div>
+        <h3>Amenazas comunes</h3>
+        <div class="info-extra">
+           <p>Existen múltiples peligros a los que los usuarios están expuestos si no navegan con precaución</p>
           <ul>
             <li>Virus y malware: son programas maliciosos que dañan o controlan tu dispositivo sin permiso</li>
             <li>Phishing: técnica que engaña al usuario para que revele información confidencial (como contraseñas o datos bancarios) a través de correos o páginas falsas</li>
             <li>Robo de identidad: ocurre cuando alguien se hace pasar por otra persona para obtener beneficios ilegales o realizar fraudes</li>
           </ul>
         <p>Estas amenazas suelen aprovechar la desinformación o el descuido del usuario</p>
+        
         </div>
-        <div class="col-img">
-          <img src="img/consejos-amenazas-internet.webp" alt="">
-        </div>
-      </section>
+      </div>
+    </div>
 
-      <section class="row">
-        <div class="col-img">
-          <img src="img/proteccion de datos personales.webp" alt="">
-        </div>
-        <div class="col-text">
-           <h2>Protección de datos personales</h2>
-           <p>La privacidad en línea es un derecho y una responsabilidad. Proteger nuestros datos significa</p>
+    <div class="modulo" onclick="toggleModulo(this)">
+      <img src="img/proteccion de datos personales.webp" alt="">
+      <div>
+        <h3>Protección de datos</h3>
+        <div class="info-extra">
+          <p>La privacidad en línea es un derecho y una responsabilidad. Proteger nuestros datos significa</p>
           <ul>
             <li>No compartir información sensible en redes sociales o sitios no confiables</li>
             <li>Configurar adecuadamente la privacidad de nuestras cuentas</li>
@@ -237,23 +61,35 @@
             <p>El mal uso de datos personales puede llevar a pérdidas económicas o reputacionales</p>
           </ul>
         </div>
-      </section>
+      </div>
+    </div>
 
-       <section class="row">
-        <div class="col-text">
-                <h2>Ciberseguridad en redes</h2>
-                <p>Las redes domésticas y empresariales también necesitan protección Algunas medidas incluyen</p>
+    <div class="modulo" onclick="toggleModulo(this)">
+      <img src="img/ciberseguridad en redes.webp" alt="">
+      <div>
+        <h3>Ciberseguridad en redes</h3>
+        <div class="info-extra">
+            <p>Las redes domésticas y empresariales también necesitan protección Algunas medidas incluyen</p>
           <ul>
             <li>Instalar cortafuegos (firewalls) para controlar el tráfico que entra y sale de la red</li>
             <li>Usar antivirus y antispyware actualizados</li>
             <li>Cambiar las contraseñas predeterminadas de routers y dispositivos conectados</li>
             <li>Implementar redes privadas virtuales (VPN) para cifrar la conexión, especialmente en lugares públicos</li>
           </ul>
-
-            </div>
-        <div class="col-img">
-          <img src="img/ciberseguridad en redes.webp" alt="Descripción de imagen">
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      document.querySelectorAll('.circle-link').forEach(link => link.classList.toggle('show'));
+    }
+
+    function toggleModulo(modulo) {
+      modulo.classList.toggle('activo');
+      modulo.classList.add('revisado');
+    }
+  </script>
 </body>
 </html>
