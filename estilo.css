@@ -166,3 +166,56 @@ footer button {
 .close:hover {
   color: #79c0ff;
 }
+
+.mobile-nav {
+  display: none; 
+}
+
+.mobile-nav button {
+  background-color: #161b22;
+  color: #58a6ff;
+  border: 1px solid #30363d;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mobile-nav button:hover {
+  background-color: #1e2533;
+}
+
+
+@media (max-width: 768px) {
+  
+  .menu-circles {
+    display: none;
+  }
+
+ 
+  .mobile-nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 0.5rem;
+    background-color: rgba(13, 17, 23, 0.95);
+    border-top: 1px solid #30363d;
+    z-index: 1200;
+  }
+
+  .modulo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .modulo img {
+    width: 100px;
+    height: 100px;
+  }
+}
