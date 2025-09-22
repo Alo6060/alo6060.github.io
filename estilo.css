@@ -226,4 +226,10 @@ footer button {
     border-top: 1px solid #30363d;
     z-index: 1200;
   }
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
 }

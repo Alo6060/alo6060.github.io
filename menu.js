@@ -1,7 +1,7 @@
 (function() {
   const MOBILE_MAX = 768;
 
-  // Cargar el HTML del menú
+  
   fetch('/menu.html')
     .then(res => {
       if (!res.ok) throw new Error("No se pudo cargar menu.html");
@@ -22,13 +22,13 @@
         mobileNav.style.display = isMobile ? 'flex' : 'none';
       }
 
-      // Ocultar menú circular en móvil
+      
       document.querySelectorAll('.menu-circles').forEach(el => {
         el.style.display = isMobile ? 'none' : '';
       });
     }
 
-    // Manejar clics en los botones
+    
     mobileNav.addEventListener('click', e => {
       const btn = e.target.closest('.nav-btn');
       if (!btn) return;
